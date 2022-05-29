@@ -7,7 +7,8 @@ while i > 0:
         print('登入成功!')
         break
     else:
-        if i == 0:
-            print('密碼錯誤,帳號鎖定')
+        print('密碼錯誤!')
+        if i > 0:
+            print('還有', i, '次機會!')
         else:
-            print('密碼錯誤! 還有', i, '次機會!')
+            print('帳號鎖定!')
